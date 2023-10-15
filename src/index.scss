@@ -1,0 +1,29 @@
+/* Global */
+:root {
+  --color-darkCyan: hsl(185, 75%, 39%);
+  --color-veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --color-darkGrayishBlue: hsl(227, 10%, 46%);
+  --color-darkGray: hsl(0, 0%, 59%);
+  /* color: hsla(hue, saturation, lightness, alpha); */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-darkCyan);
+  background-image: url("./assets/bg-pattern-top.svg"),
+    url("./assets/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: -350px -500px, 1200px 550px;
+}

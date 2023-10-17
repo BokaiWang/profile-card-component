@@ -109,3 +109,17 @@ body {
 .details__age {
   color: var(--color-darkGrayishBlue);
 }
+
+@media (max-width: 375px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-darkCyan);
+    background-image: url("./assets/bg-pattern-top.svg"),
+      url("./assets/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: -750px -650px, 100px 350px;
+  }
+}

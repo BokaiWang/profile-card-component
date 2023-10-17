@@ -1,14 +1,24 @@
 import { FC } from "react";
 import { Profile } from "../App";
 
-interface CardProps {
+import Information from "./Information";
+import Statistics from "./Statistics";
+
+export interface CardProps {
   profile: Profile;
 }
 
 const Card: FC<CardProps> = ({ profile }) => {
   return (
-    <section className="card">
-      <img src={profile.headShot}></img>
+    <section className="card__container">
+      <div className="card">
+        <Information profile={profile}></Information>
+        <Statistics
+          followers={profile.followers}
+          likes={profile.likes}
+          photos={profile.photos}
+        />
+      </div>
     </section>
   );
 };
